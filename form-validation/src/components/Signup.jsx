@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import Validate from './Validate';
 
 const Signup = ({ submitForm }) => {
@@ -10,7 +10,7 @@ const Signup = ({ submitForm }) => {
 
     const [errors, setErrors] = useState({});
 
-    const [correctData, setCorrectdata] = useState(fasle);
+    const [correctData, setCorrectdata] = useState(false);
 
     const handleChange = (e) => {
         setValue({ ...values, [e.target.name]: e.target.value })
@@ -22,6 +22,9 @@ const Signup = ({ submitForm }) => {
     }
 
     useEffect(() => {
+        if (Object.keys(errors).length === 0 && correctData) {
+            submitForm(true);
+        }
 
     }, [errors]);
 
