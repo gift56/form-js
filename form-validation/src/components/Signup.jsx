@@ -7,6 +7,8 @@ const Signup = () => {
         password: ""
     });
 
+    const [errors, setErrors] = useState({});
+
     const handleChange = (e) => {
         setValue({ ...values, [e.target.name]: e.target.value })
     }
