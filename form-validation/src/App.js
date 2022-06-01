@@ -1,9 +1,11 @@
-import Signup from './components/Signup';
+import Form from './components/Form';
 import './css/Form.css';
 
 function App() {
   return (
-    <Signup />
+    <div>
+      <Form />
+    </div>
   );
 }
 
