@@ -15,6 +15,7 @@ const Signup = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        setErrors(Validate(values));
     }
 
     return (
