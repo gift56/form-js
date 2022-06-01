@@ -1,4 +1,8 @@
 const Signup = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <div className="container">
             <div className="app-wrapper">
@@ -19,7 +23,7 @@ const Signup = () => {
                         <input type="password" className="input" />
                     </div>
                     <div>
-                        <button className="submit">Sign Up</button>
+                        <button className="submit" onClick={handleSubmit}>Sign Up</button>
                     </div>
                 </form>
             </div>
