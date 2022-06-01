@@ -2,8 +2,12 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      hello me
+    <div className="container mt-3">
+      <div className="row">
+        <div className="col-md-5">
+          Signup
+        </div>
+      </div>
     </div>
   );
 }
