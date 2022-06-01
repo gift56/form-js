@@ -1,4 +1,5 @@
 import './App.css';
+import avatarImg from './asset/illustator.png';
 
 function App() {
   return (
