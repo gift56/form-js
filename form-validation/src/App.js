@@ -1,4 +1,3 @@
-import './App.css';
 import avatar from './asset/teach.jpg';
 import Signup from './components/Signup';
 
