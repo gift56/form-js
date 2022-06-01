@@ -2,8 +2,10 @@ import { useState } from 'react';
 
 const Signup = () => {
 
-    const [value, setValue] = useState({
-        
+    const [values, setValue] = useState({
+        fullname: "",
+        email: "",
+        password: ""
     });
 
     const handleSubmit = (e) => {
@@ -19,15 +21,15 @@ const Signup = () => {
                 <form action="" className="form-wrapper">
                     <div className="name">
                         <label className="label">Full Name</label>
-                        <input type="text" className="input" name="fullname" />
+                        <input type="text" className="input" name="fullname" value={values.fullname} />
                     </div>
                     <div className="email">
                         <label className="label">Email Address</label>
-                        <input type="email" className="input" name="email" />
+                        <input type="email" className="input" name="email"  value={values.email}/>
                     </div>
                     <div className="password">
                         <label className="label">password</label>
-                        <input type="password" className="input" name="password" />
+                        <input type="password" className="input" name="password"  value={values.password}/>
                     </div>
                     <div>
                         <button className="submit" onClick={handleSubmit}>Sign Up</button>
