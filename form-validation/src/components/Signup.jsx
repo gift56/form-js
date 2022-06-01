@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Validate from './Validate';
 
-const Signup = () => {
+const Signup = ({ submitForm }) => {
     const [values, setValue] = useState({
         fullname: "",
         email: "",
@@ -10,13 +10,20 @@ const Signup = () => {
 
     const [errors, setErrors] = useState({});
 
+    const [correctData, setCorrectdata] = useState(fasle);
+
     const handleChange = (e) => {
         setValue({ ...values, [e.target.name]: e.target.value })
     }
     const handleSubmit = (e) => {
         e.preventDefault();
         setErrors(Validate(values));
+        setCorrectdata(true);
     }
+
+    useEffect(() => {
+
+    }, [errors]);
 
     return (
         <div className="container">
