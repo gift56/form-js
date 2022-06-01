@@ -9,7 +9,7 @@ function App() {
           SignUp
         </div>
         <div className="col-md-7">
-          <img src="" alt="" />
+          <img src={avatarImg} alt="" className='img-fluid' />
         </div>
       </div>
     </div>
