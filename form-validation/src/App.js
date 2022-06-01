@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <h1>Sign Up Form Validation</h1>
+      <h1>React Form Validation</h1>
     </>
   );
 }
