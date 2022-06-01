@@ -64,7 +64,7 @@
 button:active {
     transform: translateY(2px);
 }
-.form-succes {
+.form-success {
     display: flex;
     justify-content: center;
     margin-top: 250px;
