@@ -1,7 +1,7 @@
 const Validate = (values) => {
     let errors = {};
     let patten = /\S+@\S+\.\S+/
-
+    
     if (!values.fullname) {
         errors.fullname = "Name Field is Required"
     }
