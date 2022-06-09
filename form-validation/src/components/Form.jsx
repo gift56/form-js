@@ -3,6 +3,7 @@ import Signup from './Signup';
 import Successful from './Successful';
 
 const Form = () => {
+    document.title='Form Validation';
     const [formSubmitted, setFormSubmition] = useState(false);
 
     const submitForm = () => {
