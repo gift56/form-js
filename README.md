@@ -2,8 +2,6 @@
 
 ## installed react app
 
-### Done with the project
-
 #### Just hosted the project
 
 ### You can view the live demo on the link provided below :
