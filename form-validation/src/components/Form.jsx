@@ -13,4 +13,4 @@ const Form = () => {
     return <div> {!formSubmitted ? <Signup submitForm={submitForm} /> : <Successful />}</div>
 }
 
-export default Form
+export default Form;
