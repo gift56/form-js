@@ -1,3 +1,4 @@
+import React from 'react';
 import './../css/Form.css';
 
 const Successful = () => {
@@ -12,4 +13,4 @@ const Successful = () => {
     )
 }
 
-export default Successful
+export default Successful;
